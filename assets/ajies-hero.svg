@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 370" width="100%" height="auto" role="img" aria-label="Ajies S. — Application Developer | Front-End Developer">
+  <defs>
+    <!-- Background Gradient: Rich Luminous Dark Burgundy from Photo -->
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140510"/>
+      <stop offset="35%" stop-color="#230A1B"/>
+      <stop offset="65%" stop-color="#2D0D22"/>
+      <stop offset="100%" stop-color="#160512"/>
+    </linearGradient>
+
+    <!-- Glowing Border Accent Gradient -->
+    <linearGradient id="hero-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E1B54" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#451126" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.9"/>
+      <stop offset="75%" stop-color="#701A3D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#9E1B54" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Bottom Neon Underglow Gradient (As Seen in Attached Photo) -->
+    <radialGradient id="hero-underglow" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#A81D58" stop-opacity="0.75"/>
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#3D0B20" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Editorial Name Gradient -->
+    <linearGradient id="hero-name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#F8F0F3"/>
+      <stop offset="80%" stop-color="#E5B5C7"/>
+      <stop offset="100%" stop-color="#C77B9B"/>
+    </linearGradient>
+
+    <!-- Animated Laser Underline Gradient -->
+    <linearGradient id="hero-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="-0.4; 1.0" dur="3.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" stop-color="#9E1B54" stop-opacity="0.8">
+        <animate attributeName="offset" values="-0.2; 1.2" dur="3.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="1">
+        <animate attributeName="offset" values="0.0; 1.45" dur="3.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="65%" stop-color="#E5B5C7" stop-opacity="0.95">
+        <animate attributeName="offset" values="0.2; 1.65" dur="3.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="0.4; 2.0" dur="3.2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Top Scanning Laser -->
+    <linearGradient id="hero-top-scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="-0.5; 1.0" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" stop-color="#9E1B54" stop-opacity="0.7">
+        <animate attributeName="offset" values="-0.2; 1.3" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95">
+        <animate attributeName="offset" values="0.0; 1.5" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" stop-color="#C77B9B" stop-opacity="0.8">
+        <animate attributeName="offset" values="0.2; 1.7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="0.5; 2.0" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Fluid Wave Gradient -->
+    <linearGradient id="hero-wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.15"/>
+      <stop offset="30%" stop-color="#8A1F4A" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#E5B5C7" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Orbital Gradient -->
+    <linearGradient id="hero-ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C77B9B" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#8A1F4A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E5B5C7" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Ambient Core Glows -->
+    <radialGradient id="hero-glow-left" cx="20%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#5A122E" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#350E22" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="hero-glow-right" cx="78%" cy="52%" r="50%">
+      <stop offset="0%" stop-color="#8A1F4A" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#451126" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="hero-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.85" fill="#8A1F4A" opacity="0.45"/>
+      <path d="M 14,10 L 14,18 M 10,14 L 18,14" stroke="#451126" stroke-width="0.35" opacity="0.35"/>
+    </pattern>
+
+    <!-- Soft Glow Filter -->
+    <filter id="hero-filter-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Underglow Blur Filter -->
+    <filter id="hero-ground-blur" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+    </filter>
+  </defs>
+
+  <style>
+    .f-mono {
+      font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+    }
+    .f-serif {
+      font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    }
+    .f-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .pill-txt {
+      font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      fill: #F8F0F3;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- 0. Radiant Neon Underglow (Spills Downward Like Attached Photo) -->
+  <g transform="translate(470, 350)" filter="url(#hero-ground-blur)">
+    <ellipse cx="0" cy="0" rx="420" ry="22" fill="url(#hero-underglow)">
+      <animate attributeName="rx" values="390; 440; 390" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7; 1.0; 0.7" dur="5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- 1. Background Shell (Rich Dark Burgundy) -->
+  <rect width="940" height="350" rx="16" fill="url(#hero-bg)"/>
+
+  <!-- 2. Ambient Pulsing Glow Fields -->
+  <rect width="940" height="350" rx="16" fill="url(#hero-glow-left)">
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <rect width="940" height="350" rx="16" fill="url(#hero-glow-right)">
+    <animate attributeName="opacity" values="0.6;0.95;0.6" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- 3. Technical Grid Pattern Overlay -->
+  <rect x="2" y="2" width="936" height="346" rx="14" fill="url(#hero-grid)" opacity="0.8"/>
+
+  <!-- Top Laser Scanner Line -->
+  <line x1="20" y1="2" x2="920" y2="2" stroke="url(#hero-top-scan)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 4. Top Navigation / Status Header Bar -->
+  <g transform="translate(24, 22)">
+    <!-- Terminal Window Dots -->
+    <circle cx="8" cy="8" r="4.5" fill="#8A1F4A"/>
+    <circle cx="22" cy="8" r="4.5" fill="#C77B9B" opacity="0.85"/>
+    <circle cx="36" cy="8" r="4.5" fill="#E5B5C7" opacity="0.75"/>
+
+    <!-- Breadcrumb -->
+    <text x="56" y="12" class="f-mono" font-size="10.5" font-weight="600" fill="#C77B9B" letter-spacing="1.5">
+      Azees5474 <tspan fill="#701A3D">&gt;</tspan> README.md
+    </text>
+
+    <!-- Top-Right Category Pill (Dark Burgundy Box with Breathing Border) -->
+    <g transform="translate(540, -4)">
+      <rect width="350" height="24" rx="12" fill="#2B0D1E" stroke="#8A1F4A" stroke-width="1.2">
+        <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="175" y="15.5" text-anchor="middle" class="f-mono" font-size="9" font-weight="600" fill="#E5B5C7" letter-spacing="1.8">
+        APPLICATION DEVELOPER · FRONT-END SPECIALIST
+      </text>
+    </g>
+  </g>
+
+  <!-- Horizontal Divider -->
+  <line x1="24" y1="52" x2="916" y2="52" stroke="#451126" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- 5. Right Hologram / Orbital Gyroscope Matrix -->
+  <g transform="translate(745, 192)">
+    <!-- Deep Core Glow -->
+    <circle cx="0" cy="0" r="105" fill="#701A3D" opacity="0.25">
+      <animate attributeName="r" values="90;112;90" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.18;0.32;0.18" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Outer Precision Orbital Ring (Clockwise) -->
+    <g>
+      <circle cx="0" cy="0" r="108" fill="none" stroke="#451126" stroke-width="1.2" stroke-dasharray="5 9" opacity="0.8"/>
+      <circle cx="0" cy="0" r="108" fill="none" stroke="#9E1B54" stroke-width="1.8" stroke-dasharray="24 140" opacity="0.9"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="44s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Middle Segmented Ring with Node (Counter-Clockwise) -->
+    <g>
+      <circle cx="0" cy="0" r="80" fill="none" stroke="url(#hero-ring-grad)" stroke-width="1.4" stroke-dasharray="18 12 4 12" opacity="0.9"/>
+      <circle cx="80" cy="0" r="3.4" fill="#E5B5C7" filter="url(#hero-filter-glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Inner Reticle & Crosshairs -->
+    <circle cx="0" cy="0" r="54" fill="none" stroke="#701A3D" stroke-width="1" stroke-dasharray="3 6" opacity="0.7"/>
+    <line x1="-68" y1="0" x2="-44" y2="0" stroke="#C77B9B" stroke-width="1" opacity="0.7"/>
+    <line x1="44" y1="0" x2="68" y2="0" stroke="#C77B9B" stroke-width="1" opacity="0.7"/>
+    <line x1="0" y1="-68" x2="0" y2="-44" stroke="#C77B9B" stroke-width="1" opacity="0.7"/>
+    <line x1="0" y1="44" x2="0" y2="68" stroke="#C77B9B" stroke-width="1" opacity="0.7"/>
+
+    <!-- Inner Fast Orbital Pip -->
+    <g>
+      <circle cx="0" cy="0" r="54" fill="none"/>
+      <circle cx="0" cy="-54" r="2.5" fill="#FFFFFF"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="11s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Central Monogram Disc (Dark Burgundy) -->
+    <circle cx="0" cy="0" r="36" fill="#2E0D20" stroke="#9E1B54" stroke-width="1.6"/>
+    <circle cx="0" cy="0" r="32" fill="#220917"/>
+    
+    <!-- Stylized Code Icon in Center -->
+    <text x="0" y="6" text-anchor="middle" class="f-mono" font-size="16" font-weight="700" fill="#E5B5C7" letter-spacing="1">
+      &lt; / &gt;
+    </text>
+
+    <!-- Holographic Floating Coordinate Badge -->
+    <g transform="translate(0, 116)">
+      <rect x="-95" y="-10" width="190" height="20" rx="4" fill="#280C1B" stroke="#8A1F4A" stroke-width="1" opacity="0.95"/>
+      <circle cx="-82" cy="0" r="3" fill="#C77B9B"/>
+      <circle cx="-82" cy="0" r="3" fill="none" stroke="#C77B9B" stroke-width="0.8">
+        <animate attributeName="r" values="3; 8" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9; 0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="-70" y="3.5" class="f-mono" font-size="8" font-weight="600" fill="#E5B5C7" letter-spacing="1.2">
+        CHENNAI · 13.0827°N, 80.2707°E
+      </text>
+    </g>
+  </g>
+
+  <!-- 6. Fluid Spline Energy Waves -->
+  <path d="M 0,278 C 180,235 340,320 540,260 C 690,210 800,290 940,245" fill="none" stroke="#5A122E" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.55"/>
+  <path d="M 0,268 C 190,225 360,310 560,248 C 710,195 820,278 940,235" fill="none" stroke="url(#hero-wave)" stroke-width="2.2" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="100 40; 40 100; 100 40" dur="11s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- 7. Precision Corner HUD Brackets -->
+  <path d="M 18,32 L 18,18 L 32,18" fill="none" stroke="#C77B9B" stroke-width="1.4" opacity="0.6"/>
+  <path d="M 908,18 L 922,18 L 922,32" fill="none" stroke="#C77B9B" stroke-width="1.4" opacity="0.6"/>
+  <path d="M 18,318 L 18,332 L 32,332" fill="none" stroke="#C77B9B" stroke-width="1.4" opacity="0.6"/>
+  <path d="M 908,332 L 922,332 L 922,318" fill="none" stroke="#C77B9B" stroke-width="1.4" opacity="0.6"/>
+
+  <!-- 8. Main Identity Block (Left Side) -->
+  <!-- Overline Sub-Header -->
+  <g transform="translate(48, 86)">
+    <text class="f-mono" font-size="11" font-weight="600" fill="#C77B9B" letter-spacing="3.2">
+      // 00 · ENGINEERING · CREATIVE INTERFACES · IOT
+    </text>
+  </g>
+
+  <!-- Hero Name: Ajies S. -->
+  <g transform="translate(46, 154)">
+    <text class="f-serif" font-size="62" font-weight="700" fill="url(#hero-name-grad)" letter-spacing="1.5" filter="url(#hero-filter-glow)">
+      Ajies S.
+    </text>
+  </g>
+
+  <!-- Glowing Animated Laser Underline -->
+  <g transform="translate(48, 172)">
+    <line x1="0" y1="0" x2="490" y2="0" stroke="#451126" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="490" y2="0" stroke="url(#hero-laser)" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="490,-3 493,0 490,3 487,0" fill="#C77B9B"/>
+  </g>
+
+  <!-- Role Subtitle Line -->
+  <g transform="translate(49, 204)">
+    <text class="f-sans" font-size="15" font-weight="600" fill="#E5B5C7" letter-spacing="2.2">
+      APPLICATION DEVELOPER <tspan fill="#9E1B54" font-weight="700">|</tspan> FRONT-END DEVELOPER
+    </text>
+  </g>
+
+  <!-- Narrative Tagline -->
+  <g transform="translate(49, 234)">
+    <text class="f-sans" font-size="13" font-weight="400" fill="#F8F0F3" opacity="0.92">
+      Engineering resilient desktop applications, responsive front-ends, and connected IoT systems.
+    </text>
+    <text y="20" class="f-sans" font-size="12" font-weight="400" fill="#E5B5C7" opacity="0.8">
+      Crafting performant digital experiences, engineered end to end.
+    </text>
+  </g>
+
+  <!-- 9. Technical Capability Capsules (Dark Burgundy Boxes with Subtle Pulse) -->
+  <g transform="translate(48, 282)">
+    <!-- Capsule 1: React -->
+    <g transform="translate(0, 0)">
+      <rect width="80" height="26" rx="5" fill="#2A0C1D" stroke="#8A1F4A" stroke-width="1.2">
+        <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="3.5s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="12" cy="13" r="3" fill="#C77B9B"/>
+      <text x="21" y="16.5" class="pill-txt">REACT</text>
+    </g>
+
+    <!-- Capsule 2: TypeScript -->
+    <g transform="translate(88, 0)">
+      <rect width="118" height="26" rx="5" fill="#2A0C1D" stroke="#8A1F4A" stroke-width="1.2">
+        <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="3.8s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="12" cy="13" r="3" fill="#E5B5C7"/>
+      <text x="21" y="16.5" class="pill-txt">TYPESCRIPT</text>
+    </g>
+
+    <!-- Capsule 3: Electron -->
+    <g transform="translate(214, 0)">
+      <rect width="102" height="26" rx="5" fill="#2A0C1D" stroke="#8A1F4A" stroke-width="1.2">
+        <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="4.2s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="12" cy="13" r="3" fill="#C77B9B"/>
+      <text x="21" y="16.5" class="pill-txt">ELECTRON</text>
+    </g>
+
+    <!-- Capsule 4: Python -->
+    <g transform="translate(324, 0)">
+      <rect width="86" height="26" rx="5" fill="#2A0C1D" stroke="#8A1F4A" stroke-width="1.2">
+        <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="3.6s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="12" cy="13" r="3" fill="#E5B5C7"/>
+      <text x="21" y="16.5" class="pill-txt">PYTHON</text>
+    </g>
+
+    <!-- Capsule 5: ESP32 IoT -->
+    <g transform="translate(418, 0)">
+      <rect width="104" height="26" rx="5" fill="#2A0C1D" stroke="#8A1F4A" stroke-width="1.2">
+        <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="12" cy="13" r="3" fill="#C77B9B"/>
+      <text x="21" y="16.5" class="pill-txt">ESP32 IOT</text>
+    </g>
+  </g>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="938" height="348" rx="15" fill="none" stroke="url(#hero-border)" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 235" width="100%" height="auto" role="img" aria-label="Project: IoT Border Alert — ESP32 Telemetry &amp; Real-Time Geofence System">
+  <defs>
+    <!-- Background Gradient: Rich Dark Shade of Burgundy -->
+    <linearGradient id="iot-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140510"/>
+      <stop offset="35%" stop-color="#230A1B"/>
+      <stop offset="65%" stop-color="#2D0D22"/>
+      <stop offset="100%" stop-color="#160512"/>
+    </linearGradient>
+
+    <!-- Glowing Outer Border Gradient -->
+    <linearGradient id="iot-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E1B54" stop-opacity="0.85"/>
+      <stop offset="30%" stop-color="#451126" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#C77B9B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Bottom Neon Underglow Gradient (As Seen in Attached Photo) -->
+    <radialGradient id="iot-underglow" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#A81D58" stop-opacity="0.75"/>
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#3D0B20" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ambient Core Glow -->
+    <radialGradient id="iot-ambient-glow" cx="25%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#5A122E" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#350E22" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Top Scanning Laser -->
+    <linearGradient id="iot-top-scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="-0.5; 1.0" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" stop-color="#9E1B54" stop-opacity="0.7">
+        <animate attributeName="offset" values="-0.2; 1.3" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95">
+        <animate attributeName="offset" values="0.0; 1.5" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" stop-color="#C77B9B" stop-opacity="0.8">
+        <animate attributeName="offset" values="0.2; 1.7" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="0.5; 2.0" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="iot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.75" fill="#701A3D" opacity="0.35"/>
+    </pattern>
+
+    <!-- Underglow Blur Filter -->
+    <filter id="iot-ground-blur" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+    </filter>
+  </defs>
+
+  <style>
+    .p-mono {
+      font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+    }
+    .p-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .p-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .p-badge {
+      font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      fill: #F8F0F3;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- 0. Radiant Neon Underglow (Spills Downward Like Attached Photo) -->
+  <g transform="translate(470, 215)" filter="url(#iot-ground-blur)">
+    <ellipse cx="0" cy="0" rx="410" ry="18" fill="url(#iot-underglow)">
+      <animate attributeName="rx" values="380; 430; 380" dur="4.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7; 1.0; 0.7" dur="4.7s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- 1. Background Shell (Rich Dark Burgundy) -->
+  <rect width="940" height="215" rx="14" fill="url(#iot-bg)"/>
+  <rect width="940" height="215" rx="14" fill="url(#iot-ambient-glow)">
+    <animate attributeName="opacity" values="0.6;0.95;0.6" dur="5.6s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="2" y="2" width="936" height="211" rx="12" fill="url(#iot-grid)" opacity="0.5"/>
+
+  <!-- Top Laser Scanner Line -->
+  <line x1="20" y1="2" x2="920" y2="2" stroke="url(#iot-top-scan)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 2. Top Metadata Strip -->
+  <g transform="translate(28, 24)">
+    <!-- Badge Pill with Breathing Stroke -->
+    <rect width="280" height="22" rx="4" fill="#2B0D1E" stroke="#8A1F4A" stroke-width="1.2">
+      <animate attributeName="stroke" values="#8A1F4A;#C77B9B;#8A1F4A" dur="3.8s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Pulsing Live Dot Beacon -->
+    <circle cx="10" cy="11" r="3" fill="#C77B9B">
+      <animate attributeName="r" values="2.4; 3.8; 2.4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7; 1; 0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="20" y="14.5" class="p-mono" font-size="9" font-weight="600" fill="#E5B5C7" letter-spacing="1.4">
+      03 · EMBEDDED / HARDWARE · TELEMETRY
+    </text>
+
+    <!-- Right Status -->
+    <text x="884" y="14.5" text-anchor="end" class="p-mono" font-size="9" fill="#C77B9B" letter-spacing="1.5">
+      GITHUB REPO ↗
+    </text>
+  </g>
+
+  <!-- 3. Project Name & Tagline -->
+  <g transform="translate(28, 76)">
+    <text class="p-serif" font-size="28" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">
+      IoT Border Alert System
+    </text>
+    <text x="320" y="-3" class="p-sans" font-size="13" font-weight="500" fill="#E5B5C7" opacity="0.9">
+      — ESP32 Real-Time GPS Geofencing &amp; Telemetry
+    </text>
+  </g>
+
+  <!-- 4. Summary Description -->
+  <g transform="translate(28, 104)">
+    <text class="p-sans" font-size="12.5" fill="#F8F0F3" opacity="0.92">
+      Maritime safety hardware firmware that calculates live vessel coordinates against international maritime boundaries,
+    </text>
+    <text y="19" class="p-sans" font-size="12.5" fill="#F8F0F3" opacity="0.92">
+      triggering graduated multi-stage audio buzzer alarms and real-time cloud alerts via Blynk IoT and FreeRTOS.
+    </text>
+  </g>
+
+  <!-- 5. Key Architecture Metrics / Highlights (Dark Burgundy Boxes) -->
+  <g transform="translate(28, 148)">
+    <!-- Metric 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="24" rx="4" fill="#280C1E" stroke="#701A3D" stroke-width="1"/>
+      <text x="8" y="16" class="p-mono" font-size="8.5" fill="#E5B5C7" letter-spacing="1">
+        ◆ GPS GEOFENCE ENGINE
+      </text>
+    </g>
+
+    <!-- Metric 2 -->
+    <g transform="translate(190, 0)">
+      <rect width="195" height="24" rx="4" fill="#280C1E" stroke="#701A3D" stroke-width="1"/>
+      <text x="8" y="16" class="p-mono" font-size="8.5" fill="#E5B5C7" letter-spacing="1">
+        ◆ FREERTOS MULTI-TASKING
+      </text>
+    </g>
+
+    <!-- Metric 3 -->
+    <g transform="translate(395, 0)">
+      <rect width="195" height="24" rx="4" fill="#280C1E" stroke="#701A3D" stroke-width="1"/>
+      <text x="8" y="16" class="p-mono" font-size="8.5" fill="#E5B5C7" letter-spacing="1">
+        ◆ REAL-TIME TELEMETRY
+      </text>
+    </g>
+  </g>
+
+  <!-- 6. Tech Stack Pills (Dark Burgundy Capsules) -->
+  <g transform="translate(28, 184)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="64" height="20" rx="3" fill="#300E22" stroke="#8A1F4A" stroke-width="1"/>
+      <text x="32" y="13.5" text-anchor="middle" class="p-badge">C++</text>
+    </g>
+
+    <!-- Pill 2 -->
+    <g transform="translate(70, 0)">
+      <rect width="68" height="20" rx="3" fill="#300E22" stroke="#5A122E" stroke-width="1"/>
+      <text x="34" y="13.5" text-anchor="middle" class="p-badge">ESP32</text>
+    </g>
+
+    <!-- Pill 3 -->
+    <g transform="translate(144, 0)">
+      <rect width="84" height="20" rx="3" fill="#300E22" stroke="#5A122E" stroke-width="1"/>
+      <text x="42" y="13.5" text-anchor="middle" class="p-badge">FREERTOS</text>
+    </g>
+
+    <!-- Pill 4 -->
+    <g transform="translate(234, 0)">
+      <rect width="90" height="20" rx="3" fill="#300E22" stroke="#5A122E" stroke-width="1"/>
+      <text x="45" y="13.5" text-anchor="middle" class="p-badge">GPS NEO-6M</text>
+    </g>
+
+    <!-- Pill 5 -->
+    <g transform="translate(330, 0)">
+      <rect width="86" height="20" rx="3" fill="#300E22" stroke="#5A122E" stroke-width="1"/>
+      <text x="43" y="13.5" text-anchor="middle" class="p-badge">BLYNK IOT</text>
+    </g>
+  </g>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="938" height="213" rx="13" fill="none" stroke="url(#iot-border)" stroke-width="1.2"/>
+</svg>

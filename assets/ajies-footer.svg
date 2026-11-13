@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 140" width="100%" height="auto" role="img" aria-label="Ajies S. — Footer">
+  <defs>
+    <!-- Background Gradient: Rich Dark Shade of Burgundy -->
+    <linearGradient id="foot-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140510"/>
+      <stop offset="35%" stop-color="#230A1B"/>
+      <stop offset="65%" stop-color="#2D0D22"/>
+      <stop offset="100%" stop-color="#160512"/>
+    </linearGradient>
+
+    <!-- Glowing Outer Border Gradient -->
+    <linearGradient id="foot-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.3"/>
+      <stop offset="30%" stop-color="#9E1B54" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#9E1B54" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Bottom Neon Underglow Gradient (As Seen in Attached Photo) -->
+    <radialGradient id="foot-underglow" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#A81D58" stop-opacity="0.75"/>
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#3D0B20" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Name Gradient -->
+    <linearGradient id="foot-name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8F0F3"/>
+      <stop offset="100%" stop-color="#E5B5C7"/>
+    </linearGradient>
+
+    <!-- Top Laser Pulse Gradient -->
+    <linearGradient id="foot-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="-0.4; 1.0" dur="3.8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" stop-color="#9E1B54" stop-opacity="0.7">
+        <animate attributeName="offset" values="-0.2; 1.2" dur="3.8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1">
+        <animate attributeName="offset" values="0.0; 1.4" dur="3.8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" stop-color="#C77B9B" stop-opacity="0.85">
+        <animate attributeName="offset" values="0.2; 1.6" dur="3.8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1">
+        <animate attributeName="offset" values="0.4; 2.0" dur="3.8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Center Radial Glow -->
+    <radialGradient id="foot-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#451126" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#140510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Underglow Blur Filter -->
+    <filter id="foot-ground-blur" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+    </filter>
+
+    <filter id="foot-filter-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .f-mono {
+      font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+    }
+    .f-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .f-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- 0. Radiant Neon Underglow (Spills Downward Like Attached Photo) -->
+  <g transform="translate(470, 120)" filter="url(#foot-ground-blur)">
+    <ellipse cx="0" cy="0" rx="400" ry="16" fill="url(#foot-underglow)">
+      <animate attributeName="rx" values="370; 420; 370" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7; 1.0; 0.7" dur="5s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- 1. Background Shell (Rich Dark Burgundy) -->
+  <rect width="940" height="120" rx="14" fill="url(#foot-bg)"/>
+  <rect width="940" height="120" rx="14" fill="url(#foot-glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- 2. Minimal Flowing Top Horizon Line with Scanning Laser -->
+  <line x1="36" y1="1" x2="904" y2="1" stroke="#451126" stroke-width="1.2"/>
+  <line x1="36" y1="1" x2="904" y2="1" stroke="url(#foot-laser)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 3. Corner Precision Markers -->
+  <path d="M 16,26 L 16,14 L 28,14" fill="none" stroke="#C77B9B" stroke-width="1.2" opacity="0.6"/>
+  <path d="M 912,14 L 924,14 L 924,26" fill="none" stroke="#C77B9B" stroke-width="1.2" opacity="0.6"/>
+  <path d="M 16,94 L 16,106 L 28,106" fill="none" stroke="#C77B9B" stroke-width="1.2" opacity="0.6"/>
+  <path d="M 912,106 L 924,106 L 924,94" fill="none" stroke="#C77B9B" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- 4. Left & Right Rotating Reticles -->
+  <g transform="translate(86, 60)">
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#451126" stroke-width="1" stroke-dasharray="3 4"/>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#9E1B54" stroke-width="1.2" stroke-dasharray="8 20">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="#701A3D" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C77B9B"/>
+  </g>
+
+  <g transform="translate(854, 60)">
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#451126" stroke-width="1" stroke-dasharray="3 4"/>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#9E1B54" stroke-width="1.2" stroke-dasharray="8 20">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="#701A3D" stroke-width="0.8" opacity="0.7"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C77B9B"/>
+  </g>
+
+  <!-- 5. Centered Identity Block -->
+  <!-- Name (Editorial Serif) -->
+  <g transform="translate(470, 42)">
+    <text text-anchor="middle" class="f-serif" font-size="24" font-weight="700" fill="url(#foot-name-grad)" letter-spacing="1.5" filter="url(#foot-filter-glow)">
+      Ajies S.
+    </text>
+  </g>
+
+  <!-- Glowing Underline Divider -->
+  <g transform="translate(470, 56)">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#451126" stroke-width="1.2"/>
+    <line x1="-70" y1="0" x2="70" y2="0" stroke="#C77B9B" stroke-width="1.8" opacity="0.9">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <polygon points="0,-2 2.5,0 0,2 -2.5,0" fill="#E5B5C7"/>
+  </g>
+
+  <!-- Narrative Tagline -->
+  <g transform="translate(470, 77)">
+    <text text-anchor="middle" class="f-sans" font-size="11" font-weight="500" fill="#E5B5C7" letter-spacing="1.2" opacity="0.95">
+      Building intuitive interfaces and resilient systems.
+    </text>
+  </g>
+
+  <!-- Monospace Sub-Strip -->
+  <g transform="translate(470, 98)">
+    <text text-anchor="middle" class="f-mono" font-size="8.5" fill="#C77B9B" letter-spacing="2.2" opacity="0.85">
+      ENGINEERING · DESIGN · PERFORMANCE // GITHUB: @AZEES5474 // 2026
+    </text>
+  </g>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="938" height="118" rx="13" fill="none" stroke="url(#foot-border)" stroke-width="1.2"/>
+</svg>
